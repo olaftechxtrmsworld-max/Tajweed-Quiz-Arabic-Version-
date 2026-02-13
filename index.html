@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- SEO -->
+    <meta name="description" content="Answer interactive tajweed questions, get instant feedback, and see your final score. Perfect for students and quiz lovers!">
+    <meta name="keywords" content="Tajweed, Quiz, Interactive, JavaScript Game, Play Online, Education">
+    <meta name="author" content="Dev. Ola">
+
+    <!-- Social Media / Open Graph -->
+    <meta property="og:title" content="Tajweed Quiz – Test Your Brainpower 🧠🧬">
+    <meta property="og:description" content="Answer interactive tajweed questions, get instant feedback, and see your final score. Perfect for students and quiz lovers!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content=""cl>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tajweed Quiz – Test Your Brainpower 🧠🧬">
+    <meta name="twitter:description" content="Answer interactive tajweed questions, get instant feedback, and see your final score. Perfect for students and quiz lovers!">
+    <meta name="twitter:image" content="">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <title>اختبر نفسك في أحكام التّجويد</title>
+</head>
+
+<body>
+    <div id="questcontainer">
+        <div class="welcome">
+            <h1 class="header">مرحبًا بكم في اختبار التّجويد!</h1>
+            <h2 id="subheader" class="fade-in">"اختبر فهمك لأحكام التّجويد وحسِّن تلاوتك للقرآن خطوة بخطوة.<br>
+كلّ سؤال لمساعدتك وليس للاستعجال.<br> تعلَّم وتفكَّر وازدد ثقة ."<br />
+
+                اضغط على "ابدأ الاختبار" عندما تكون مستعدا، ثم اعرض نتيجتك فورًا بعد الانتهاء!
+            </h2>
+            <button id="startbtn">ابدأ الاختبار</button>
+        </div>
+
+        <div class="container hide">
+            <h1 class="header">أسئلة التّجويد</h1>
+            <p id="question"></p>
+
+            <div id="anscont">
+
+            </div>
+            <button id="nextbtn" class="hide">السّؤال التّالي</button>
+            <button id="view">عرض النّتيجة</button>
+            <div id="ft">
+                <span id="score" class="progress"></span>
+                <span id="progress" class ="progress"></span>
+            </div>
+        </div>
+
+
+
+        <div id="endscreen" class="hide">
+            <div id="ptcontainer">
+                <h1 class="header">ما شاء اللّه، تمّ  الاختبار!</h1>
+                <p id="scr" class="end"></p>
+                <p id="percentage" class="end"></p>
+                <p id="result" class="end"></p>
+                <div id="lastbtncont">
+                    <button id="restart" class="btn">إعادة الاختبار</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="foot">Dev. Ola (Ibnul-Arobiyy, Abu Junaid) &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
